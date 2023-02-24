@@ -5,7 +5,7 @@ try:
     student_id = input("Enter Student ID")
     student_class = input("Enter Student Class")
 
-    Student.create(name=student_name, id=student_id, grade=student_class)
+    Student.create(name=student_name, id=student_id, student_class=student_class)
     print("Student registered successfully")
 
 except:
