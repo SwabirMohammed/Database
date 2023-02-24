@@ -8,7 +8,7 @@ try:
     User.create(name=user_name, email=user_email, password=user_password)
     print("User created successfully")
 
-    except:
+except:
     print("Failed to create User, use a different Email")
 
 
