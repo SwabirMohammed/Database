@@ -33,6 +33,7 @@ class Student(Model):
 
 Student.create_table(fail_silently=True)
 
+
 class People(Model):
     name = CharField()
     phone = CharField()
@@ -42,6 +43,8 @@ class People(Model):
     religion = CharField()
     password = CharField()
 
-    class Meta = db
+    class Meta:
+        database = db
+
 
 People.create_table(fail_silently=True)
