@@ -32,3 +32,16 @@ class Student(Model):
 
 
 Student.create_table(fail_silently=True)
+
+class People(Model):
+    name = CharField()
+    phone = CharField()
+    email = CharField()
+    county = CharField()
+    gender = CharField()
+    religion = CharField()
+    password = CharField()
+
+    class Meta = db
+
+People.create_table(fail_silently=True)
